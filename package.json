@@ -13,9 +13,14 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource-variable/heebo": "^5.0.5",
+    "@fontsource/cormorant-infant": "^5.0.5",
+    "@fontsource/hind": "^5.0.5",
+    "@sanity/code-input": "^4.1.1",
     "autoprefixer": "^10.4.14",
     "gatsby": "^5.11.0",
     "gatsby-plugin-google-gtag": "^5.11.0",
@@ -30,12 +35,24 @@
     "postcss": "^8.4.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.2"
+    "react-icons": "^4.10.1",
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss": "^3.3.2",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "twin.macro": "^3.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.0",
     "typescript": "^5.1.6"
   }
 }

@@ -1,3 +1,98 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
+
+:root,
+.root,
+#root,
+#docs-root {
+  --background-color: #fff;
+  --text-color: #000;
+  --header-color: #35185a;
+  --brand-color-primary: #35185a;
+  --brand-color-secondary: #8152c2;
+  --brand-color-accent: #ff5c5c;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-color: #333;
+  --text-color: #fff;
+  --header-color: #bbb;
+  --brand-color-primary: #8152c2;
+  --brand-color-secondary: #ff5c5c;
+  --brand-color-accent: #35185a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 18px; /* default size for mobile */
+  font-weight: 300;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: "Heebo Variable", sans-serif;
+  font-size: 2em; /* default size for mobile */
+  font-weight: 700;
+  color: var(--header-color);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.5em; /* default size for mobile */
+  font-weight: normal;
+  font-style: oblique;
+  color: var(--brand-color-primary); /* Change this as per your requirement */
+  transform: skew(-7deg);
+}
+
+/* For medium devices (tablets: 768px and up) */
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.75em;
+  }
+}
+
+/* For large devices (desktops: 1024px and up) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2em;
+  }
+}
